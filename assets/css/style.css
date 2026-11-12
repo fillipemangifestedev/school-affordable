@@ -14,6 +14,7 @@
     /* background-color */
     --background-color-dark-blue: #26335D;
     --background-color-green: #2DC071;
+    --backgrund-color-light-grey: #FAFAFA;
     --background-color-orange: #E77C40;
     --background-color-purple: #8D5CF6;
     --background-color-danger-red: #E74040;
@@ -25,6 +26,8 @@
     --shadow-light: 0 2px 4px rgba(00, 00, 00, 0.10);
 
     /* typography */
+    --font-family: "Montserrat", sans-serif;
+
     --h1-font-size: 58px;
     --h1-font-weight: 700;
     --h1-line-height: 80px;
@@ -81,6 +84,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 /* style global */
@@ -131,6 +135,10 @@ a {
     font-weight: var(--a-font-weight);
     line-height: var(--a-line-height);
     letter-spacing: var(--a-letter-spacing);
+
+    text-decoration: none;
+
+    color: var(--txt-color-light-white);
 }
 
 p {
@@ -157,3 +165,350 @@ button {
 }
 
 /* start */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+    z-index: 1;
+
+    background-color: var(--background-color-dark-blue);
+}
+
+.img-body {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+
+    background-repeat: no-repeat;
+
+    object-fit: cover;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 41px;
+    padding: 17px 143px 21px 136px;
+}
+
+header h3 {
+    padding: 13px 42px 13px 0;
+
+    color: var(--txt-color-light-white);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 239px;
+}
+
+.nav-link {
+    display: flex;
+
+    gap: 20px;
+    padding: 17px 0;
+}
+
+.nav-link a {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link a:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+
+    border-bottom: 2px solid var(--background-color-dark-blue);
+}
+
+.nav-login {
+    display: flex;
+    align-items: center;
+
+    gap: 45px;
+    padding: 3px 76px 3px 0;
+}
+
+.nav-login a {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-login a:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+
+    border-bottom: 2px solid var(--background-color-purple);
+}
+
+.nav-login button {
+    padding: 15px 25px;
+
+    border: 2px solid var(--background-color-purple);
+    border-radius: 5px;
+
+    color: var(--txt-color-light-white);
+    background-color: var(--background-color-purple);
+}
+
+.nav-login button:hover {
+    transition: 0.5s ease-in-out;
+
+    border: 2px solid var(--background-color-dark-blue);
+
+    background-color: var(--background-color-dark-blue);
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* welcome */
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.welcome-text h5 {
+    width: 147px;
+
+    color: var(--txt-color-light-white);
+}
+
+.welcome-text h1 {
+    width: 542px;
+
+    color: var(--txt-color-light-white);
+}
+
+.welcome-text h4 {
+    width: 458px;
+
+    color: var(--txt-color-light-white);
+}
+
+.welcome-button {
+    display: flex;
+
+    gap: 10px;
+}
+
+.welcome-button button {
+    padding: 15px 40px;
+
+    border-radius: 5px;
+}
+
+.button-get {
+    border: 1px solid var(--background-color-purple);
+
+    color: var(--txt-color-light-white);
+    background-color: var(--background-color-purple);
+}
+
+.button-get:hover {
+    transition: 0.5s ease-in-out;
+
+    border: 1px solid var(--background-color-dark-blue);
+
+    background-color: var(--background-color-dark-blue);
+}
+
+.button-learn {
+    border: 1px solid var(--txt-color-light-grey);
+
+    color: var(--txt-color-light-white);
+    background-color: transparent;
+}
+
+.button-learn:hover {
+    transition: 0.5s ease-in-out;
+
+    border: 1px solid transparent;
+
+    background-color: var(--background-color-purple);
+}
+
+.welcome-img {
+    padding: 13px 58px 13.08px 59px;
+}
+
+/* brands */
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+    padding: 50px 0;
+    margin: 80px 4px;
+}
+
+.hooli {
+    padding: 0.04px 25px 0.14px 25.1px;
+}
+
+.lyft {
+    padding: 0.02px 31.5px 0.03px 31.5px;
+}
+
+.pied-pipe {
+    padding: 0.15px 25px 0.01px 25px;
+}
+
+.stripe {
+    padding: 0 24px 0.02px 24.02px;
+}
+
+.aws {
+    padding: 0.13px 23.66px;
+}
+
+.reddit {
+    padding: 0.5px 37.25px 0.36px 38px;
+}
+
+/* action */
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 70px;
+    padding: 112px 0;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 691px;
+}
+
+.action-text h6 {
+    width: 117px;
+
+    color: var(--txt-color-purple);
+}
+
+.action-text h2 {
+    width: 421px;
+
+    color: var(--txt-color-light-white);
+}
+
+.action-text p {
+    width: 462px;
+
+    color: var(--txt-color-light-white);
+}
+
+.action-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 34px;
+}
+
+.action-div-card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    padding: 35px 45px 35px 40px;
+
+    width: 238px;
+
+    background-color: var(--background-color-light-white);
+}
+
+.action-div-card img {
+    width: 72px;
+
+    object-fit: cover;
+}
+
+.action-div-card h5 {
+    width: 146px;
+
+    color: var(--txt-color-dark-blue);
+}
+
+.action-div-card h5::after {
+    content: '';
+
+    display: block;
+
+    width: 50px;
+    height: 2px;
+
+    margin-top: 20px;
+
+    background-color: var(--background-color-danger-red);
+}
+
+.action-div-card p {
+    width: 132px;
+
+    color: var(--txt-color-grey);
+}
+
+#action-congratulation-1 {
+    margin-bottom: 48px;
+}
+
+#action-congratulation-2,
+#action-congratulation-4 {
+    margin-top: 48px;
+}
+
+#action-congratulation-3 {
+    margin-bottom: 48px;
+
+    background-color: var(--background-color-purple);
+}
+
+#action-congratulation-3 h5 {
+    color: var(--txt-color-light-white);
+}
+
+#action-congratulation-3 h5::after {
+    background-color: var(--background-color-light-white);
+}
+
+#action-congratulation-3 p {
+    color: var(--txt-color-light-white);
+}
