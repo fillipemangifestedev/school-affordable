@@ -1,0 +1,159 @@
+:root {
+    /* color */
+    --txt-color-dark-blue: #252B42;
+    --txt-color-green: #2DC071;
+    --txt-color-grey: #737373;
+    --txt-color-light-grey: #ECECEC;
+    --txt-color-muted-grey: #BDBDBD;
+    --txt-color-orange: #FF7B52;
+    --txt-color-pink: #EA4C89;
+    --txt-color-purple: #8D5CF6;
+    --txt-color-danger-red: #E74040;
+    --txt-color-light-white: #ffffff;
+
+    /* background-color */
+    --background-color-dark-blue: #26335D;
+    --background-color-green: #2DC071;
+    --background-color-orange: #E77C40;
+    --background-color-purple: #8D5CF6;
+    --background-color-danger-red: #E74040;
+    --background-color-faded-white: #FFF2F3;
+    --background-color-light-white: #FFFFFF;
+
+    /* shadow */
+    --shadow-accentued: 0 13px 19px rgba(00, 00, 00, 0.07);
+    --shadow-light: 0 2px 4px rgba(00, 00, 00, 0.10);
+
+    /* typography */
+    --h1-font-size: 58px;
+    --h1-font-weight: 700;
+    --h1-line-height: 80px;
+    --h1-letter-spacing: 0.2px;
+
+    --h2-font-size: 40px;
+    --h2-font-weight: 700;
+    --h2-line-height: 50px;
+    --h2-letter-spacing: 0.2px;
+
+    --h3-font-size: 24px;
+    --h3-font-weight: 700;
+    --h3-line-height: 32px;
+    --h3-letter-spacing: 0.1px;
+
+    --h4-font-size: 20px;
+    --h4-font-weight: 400;
+    --h4-line-height: 30px;
+    --h4-letter-spacing: 0.2px;
+
+    --h5-font-size: 16px;
+    --h5-font-weight: 700;
+    --h5-line-height: 24px;
+    --h5-letter-spacing: 0.1px;
+
+    --h6-font-size: 14px;
+    --h6-font-weight: 700;
+    --h6-line-height: 24px;
+    --h6-letter-spacing: 0.2px;
+
+    --a-font-size: 14px;
+    --a-font-weight: 700;
+    --a-line-height: 24px;
+    --a-letter-spacing: 0.2px;
+
+    --p-font-size: 14px;
+    --p-font-weight: 400;
+    --p-line-height: 20px;
+    --p-letter-spacing: 0.2px;
+
+    --small-font-size: 12px;
+    --small-font-weight: 400;
+    --small-line-height: 16px;
+    --small-letter-spacing: 0.2px;
+
+    --btn-font-size: 14px;
+    --btn-font-weight: 700;
+    --btn-line-height: 22px;
+    --btn-letter-spacing: 0.2px;
+}
+
+/* reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style global */
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    line-height: var(--h1-line-height);
+    letter-spacing: var(--h1-letter-spacing);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--h2-line-height);
+    letter-spacing: var(--h2-letter-spacing);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--h3-line-height);
+    letter-spacing: var(--h3-letter-spacing);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+    font-weight: var(--h4-font-weight);
+    line-height: var(--h4-line-height);
+    letter-spacing: var(--h4-letter-spacing);
+}
+
+h5 {
+    font-size: var(--h5-font-size);
+    font-weight: var(--h5-font-weight);
+    line-height: var(--h5-line-height);
+    letter-spacing: var(--h5-letter-spacing);
+}
+
+h6 {
+    font-size: var(--h6-font-size);
+    font-weight: var(--h6-font-weight);
+    line-height: var(--h6-line-height);
+    letter-spacing: var(--h6-letter-spacing);
+}
+
+a {
+    font-size: var(--a-font-size);
+    font-weight: var(--a-font-weight);
+    line-height: var(--a-line-height);
+    letter-spacing: var(--a-letter-spacing);
+}
+
+p {
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    line-height: var(--p-line-height);
+    letter-spacing: var(--p-letter-spacing);
+}
+
+small {
+    font-size: var(--small-font-size);
+    font-weight: var(--small-font-weight);
+    line-height: var(--small-line-height);
+    letter-spacing: var(--small-letter-spacing);
+}
+
+button {
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    line-height: var(--btn-line-height);
+    letter-spacing: var(--btn-letter-spacing);
+
+    border: 2px solid transparent;
+}
+
+/* start */

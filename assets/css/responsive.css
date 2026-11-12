@@ -1,0 +1,14 @@
+/* desktop */
+@media screen and (max-width:1140px) {}
+
+/* tablet - large */
+@media screen and (max-width:960px) {}
+
+/* tablet - medium */
+@media screen and (max-width:768px) {}
+
+/* tablet - small */
+@media screen and (max-width:600px) {}
+
+/* mobile */
+@media screen and (max-width:375px) and (orientation: landscape) {}
