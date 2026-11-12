@@ -22,7 +22,7 @@
     --background-color-light-white: #FFFFFF;
 
     /* shadow */
-    --shadow-accentued: 0 13px 19px rgba(00, 00, 00, 0.07);
+    --shadow-accentued: 0 13px 19px rgba(00, 00, 00, 0.50);
     --shadow-light: 0 2px 4px rgba(00, 00, 00, 0.10);
 
     /* typography */
@@ -162,6 +162,8 @@ button {
     letter-spacing: var(--btn-letter-spacing);
 
     border: 2px solid transparent;
+
+    cursor: pointer;
 }
 
 /* start */
@@ -403,7 +405,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
 
     gap: 70px;
     padding: 112px 0;
@@ -451,6 +452,8 @@ main {
     padding: 35px 45px 35px 40px;
 
     width: 238px;
+
+    box-shadow: var(--shadow-accentued);
 
     background-color: var(--background-color-light-white);
 }
@@ -511,4 +514,237 @@ main {
 
 #action-congratulation-3 p {
     color: var(--txt-color-light-white);
+}
+
+/* courses */
+.courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 112px;
+    padding: 112px 0;
+}
+
+.courses-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 691px;
+}
+
+.courses-text h6 {
+    width: 117px;
+
+    color: var(--txt-color-purple);
+}
+
+.courses-text h2 {
+    width: 427px;
+
+    color: var(--txt-color-light-white);
+}
+
+.courses-text p {
+    width: 462px;
+
+    color: var(--txt-color-light-white);
+}
+
+.courses-product {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.courses-div-product {
+    display: flex;
+    flex-direction: column;
+
+    width: 240px;
+
+    box-shadow: var(--shadow-accentued);
+}
+
+.courses-img {
+    position: relative;
+
+    width: 240px;
+    height: 300px;
+}
+
+.courses-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.courses-badge-top {
+    position: absolute;
+
+    box-sizing: content-box;
+
+    top: 20px;
+    left: 20px;
+}
+
+.courses-badge-top h6 {
+    padding: 0 10px;
+
+    border-radius: 3px;
+
+    color: var(--txt-color-light-white);
+    background-color: var(--background-color-danger-red);
+}
+
+.courses-badge-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    position: absolute;
+
+    box-sizing: content-box;
+
+    left: 49px;
+    bottom: 24px;
+
+}
+
+.courses-badge-bottom button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
+    border-radius: 50%;
+}
+
+.courses-badge-bottom img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: cover;
+}
+
+.courses-badge-bottom button:hover {
+    transform: scale(1.2);
+    transition: 0.5 ease-in-out;
+}
+
+.courses-product-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    padding: 25px;
+
+    border-radius: 0 0 20px 20px;
+
+    background-color: var(--background-color-light-white);
+}
+
+.courses-link {
+    display: flex;
+
+    gap: 79px;
+}
+
+.courses-link a {
+    color: var(--txt-color-purple);
+}
+
+.courses-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+    padding: 5px;
+
+    border-radius: 20px;
+
+    background-color: var(--background-color-dark-blue);
+}
+
+.courses-star img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: cover;
+}
+
+.courses-star small {
+    color: var(--txt-color-light-white);
+}
+
+.courses-product-text h5 {
+    color: var(--txt-color-dark-blue);
+}
+
+.courses-product-text p {
+    color: var(--txt-color-grey);
+}
+
+.courses-sale {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.courses-sale img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: cover;
+}
+
+.courses-sale h6 {
+    padding: 4px 0;
+
+    color: var(--txt-color-grey);
+}
+
+.courses-price {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.courses-price .price-original {
+    color: var(--txt-color-muted-grey);
+}
+
+.courses-price .price-discount {
+    color: var(--txt-color-orange);
+}
+
+.courses-product-text button {
+    padding: 10px 20px;
+
+    border: 1px solid var(--background-color-purple);
+    border-radius: 37px;
+
+    color: var(--txt-color-purple);
+    background-color: var(--background-color-light-white);
+}
+
+.courses-product-text button:hover {
+    border: 1px solid var(--txt-color-pink);
+
+    color: var(--txt-color-pink);
+
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
 }
