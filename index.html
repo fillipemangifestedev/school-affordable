@@ -50,7 +50,7 @@
 
                 <div class="welcome-button">
                     <button class="button-get">Get Quote Now</button>
-                    <button class="button-learn"><a href="#action">Learn More</a></button>
+                    <a class="button-learn" href="#action">Learn More</a>
                 </div>
             </div>
 
@@ -658,9 +658,9 @@
             </div>
 
             <form>
-                <input type="email" name="email" placeholder="Your email">
+                <input class="input-form" type="email" name="email" placeholder="Your email">
 
-                <button>Subscribe</button>
+                <button class="button-form">Subscribe</button>
             </form>
         </section>
     </main>
@@ -767,6 +767,18 @@
             </div>
         </section>
     </footer>
+
+    <!-- form -->
+    <form class="form-help">
+        <input type="text" name="nome" placeholder="SEU NOME">
+        <input type="email" name="email" placeholder=" SEU EMAIL">
+        <textarea name="duvida" placeholder="DIGITE SUA DÚVIDA"></textarea>
+
+        <button class="form-help-button" type="submit">pedir orçamento</button>
+    </form>
+
+    <!-- mask -->
+    <div class="form-mask"></div>
 
     <script src="./assets/js/script.js"></script>
 </body>

@@ -198,7 +198,7 @@
 }
 
 /* ---------- ate 480px (celular) ---------- */
-@media screen and (max-width:425px) {
+@media screen and (max-width:480px) {
     :root {
         /* typography */
         --h1-font-size: 34px;

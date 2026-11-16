@@ -346,7 +346,8 @@ main>section {
     gap: 10px;
 }
 
-.welcome-button button {
+.welcome-button button,
+.button-learn {
     padding: 15px 40px;
 
     border-radius: 5px;
@@ -1456,4 +1457,89 @@ footer {
     object-fit: cover;
 
     background-color: rgb(236, 234, 234);
+}
+
+/* form */
+.form-help {
+    position: fixed;
+
+    z-index: 4;
+
+    top: 40%;
+    left: -350px;
+
+    transform: none;
+
+    background-color: var(--background-color-light-white);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    width: min(350px, calc(100vw - 32px));
+    max-height: 58vh;
+
+    overflow-y: auto;
+
+    transition: 0.5s left ease-in-out;
+}
+
+.form-help input {
+    width: 100%;
+    height: 44px;
+
+    padding-left: 10px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+    border: 1px solid var(--txt-color-muted-grey);
+
+    outline-color: var(--background-color-purple);
+}
+
+.form-help textarea {
+    width: 100%;
+    height: 100px;
+
+    padding: 5px;
+
+    font-size: 16px;
+
+    resize: vertical;
+
+    border-radius: 5px;
+    border: 1px solid var(--txt-color-muted-grey);
+
+    outline-color: var(--background-color-purple);
+}
+
+.form-help .form-help-button {
+    width: 100%;
+    margin-top: 0;
+}
+
+/* mask */
+.form-mask {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
+    z-index: 3;
+
+    visibility: hidden;
+
+    cursor: pointer;
+
+    transition: 0.5s visibility ease-in-out;
 }
