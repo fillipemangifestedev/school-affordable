@@ -2,11 +2,14 @@ console.log('Js carregando');
 
 // variables
 const openForm = document.querySelector('.button-get');
+
 const form = document.querySelector('.form-help');
+const sendButtton = document.querySelector('.form-help-button');
+
 const maskForm = document.querySelector('.form-mask');
 
 const formInput = document.querySelector('.input-form');
-const formButton = document.querySelector('.button-form');
+const inputButton = document.querySelector('.button-form');
 
 // functions
 function formContact() {
@@ -19,6 +22,8 @@ function formContact() {
     }
 };
 
+function sendForm() { };
+
 function offMask() {
     const mask = maskForm
 
@@ -27,14 +32,15 @@ function offMask() {
         form.style.transform = "none";
         maskForm.style.visibility = "hidden";
     }
-}
-
-function sendInput() {
-
 };
+
+function sendInput() { };
 
 // events
 openForm.addEventListener('click', formContact);
+
+sendButtton.addEventListener('click', sendForm);
+
 maskForm.addEventListener('click', offMask);
 
 formButton.addEventListener('click', sendInput);
