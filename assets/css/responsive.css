@@ -1,14 +1,240 @@
-/* desktop */
-@media screen and (max-width:1140px) {}
+/* ================================================
+ RESPONSIVE (desktop-first)
+   ================================================ */
 
-/* tablet - large */
-@media screen and (max-width:960px) {}
+/* ---------- ate 1280px ---------- */
+@media screen and (max-width:1280px) {
 
-/* tablet - medium */
-@media screen and (max-width:768px) {}
+    /* header */
+    header {
+        gap: 20px;
+        padding: 17px 40px 21px;
+    }
 
-/* tablet - small */
-@media screen and (max-width:600px) {}
+    nav {
+        gap: clamp(40px, 8vw, 130px);
+    }
 
-/* mobile */
-@media screen and (max-width:375px) and (orientation: landscape) {}
+    .nav-login {
+        gap: 30px;
+        padding-right: 0;
+    }
+
+    /* about */
+    .about {
+        gap: 80px;
+    }
+
+    /* footer - rights */
+    .rights {
+        gap: 40px;
+    }
+
+    .rights-text {
+        padding-right: 0;
+    }
+}
+
+/* ---------- ate 1024px (tablet) ---------- */
+@media screen and (max-width:1024px) {
+
+    /* header */
+    header {
+        padding: 17px 24px 21px;
+    }
+
+    nav {
+        gap: 40px;
+    }
+
+    /* welcome */
+    .welcome {
+        padding-top: 50px;
+    }
+
+    .welcome-img {
+        display: none;
+    }
+
+    /* action - courses - price - testimonial - newsletter*/
+    .action,
+    .courses,
+    .price,
+    .testimonial,
+    .newsletter {
+        padding: 80px 0;
+    }
+
+    .action-card,
+    .courses-product {
+        justify-content: center;
+    }
+
+    /* about */
+    .about {
+        gap: 40px;
+        padding: 80px 0;
+    }
+
+    .about-text {
+        padding: 40px 0;
+    }
+
+    /* footer - rights */
+    .rights {
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        gap: 20px;
+        padding: 25px 40px;
+    }
+
+    .rights-img {
+        padding: 0;
+    }
+}
+
+/* ---------- ate 768px (tablet pequeno) ---------- */
+@media screen and (max-width:768px) {
+    :root {
+        /* typography */
+        --h1-font-size: 44px;
+        --h1-line-height: 56px;
+
+        --h2-font-size: 32px;
+        --h2-line-height: 42px;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    /* header */
+    header {
+        flex-direction: column;
+
+        gap: 8px;
+
+        padding: 16px 16px 20px;
+    }
+
+    header h3 {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+
+        gap: 12px
+    }
+
+    .nav-link {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .nav-login {
+        padding: 0;
+    }
+
+    /* welcome */
+    .welcome-button {
+        flex-wrap: wrap;
+    }
+
+    /* action - courses - price - testimonial - newsletter*/
+    .action,
+    .courses,
+    .price,
+    .testimonial,
+    .newsletter {
+        gap: 48px;
+        padding: 64px 0;
+    }
+
+    #action-congratulation-1,
+    #action-congratulation-2,
+    #action-congratulation-3,
+    #action-congratulation-4 {
+        margin: 0;
+    }
+
+    /* about */
+    .about-img {
+        height: 420px;
+    }
+
+    /* newsletter */
+    form {
+        width: 100%;
+    }
+
+    form input {
+        flex: 1;
+
+        width: auto;
+        min-width: 0;
+    }
+
+    form button {
+        flex-shrink: 0;
+    }
+
+    /* footer - links */
+    .link-div {
+        gap: 30px 50px;
+        padding: 40px 24px;
+    }
+
+    /* rights */
+    .rights {
+        justify-content: center;
+        text-align: center;
+
+        padding: 25px 16px;
+    }
+}
+
+/* ---------- ate 480px (celular) ---------- */
+@media screen and (max-width:425px) {
+    :root {
+        /* typography */
+        --h1-font-size: 34px;
+        --h1-line-height: 44px;
+
+        --h2-font-size: 28px;
+        --h2-line-height: 36px;
+    }
+
+    /* header */
+    .nav-link {
+        display: none;
+    }
+
+    .nav-login a {
+        display: none;
+    }
+
+    /* brands */
+    .brands {
+        gap: 20px;
+        padding: 20px 0;
+        margin: 40px 0;
+    }
+
+    /* about */
+    .about-img {
+        height: 340px;
+    }
+
+    /* testimonial */
+    .testimonial-person {
+        padding: 20px 16px;
+    }
+
+    .testimonial-person-text {
+        padding: 20px 0 0;
+    }
+}
