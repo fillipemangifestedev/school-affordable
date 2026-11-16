@@ -264,7 +264,7 @@ nav {
     border-bottom: 2px solid var(--background-color-purple);
 }
 
-.nav-login button {
+.nav-login .nav-login-button {
     padding: 15px 25px;
 
     border: 2px solid var(--background-color-purple);
@@ -274,7 +274,7 @@ nav {
     background-color: var(--background-color-purple);
 }
 
-.nav-login button:hover {
+.nav-login .nav-login-button:hover {
     transition: 0.5s ease-in-out;
 
     border: 2px solid var(--background-color-dark-blue);
@@ -699,8 +699,12 @@ main>section {
     gap: 79px;
 }
 
-.courses-link a {
+.courses-link .courses-link-a {
     color: var(--txt-color-purple);
+}
+
+.courses-link .courses-link-a:hover {
+    color: var(--txt-color-pink);
 }
 
 .courses-star {
@@ -770,7 +774,9 @@ main>section {
     color: var(--txt-color-orange);
 }
 
-.courses-product-text button {
+.courses-product-text .courses-product-text-a {
+    text-align: center;
+
     padding: 10px 20px;
 
     border: 1px solid var(--background-color-purple);
@@ -780,7 +786,7 @@ main>section {
     background-color: var(--background-color-light-white);
 }
 
-.courses-product-text button:hover {
+.courses-product-text .courses-product-text-a:hover {
     border: 1px solid var(--txt-color-pink);
 
     color: var(--txt-color-pink);
@@ -926,12 +932,22 @@ main>section {
     background-color: var(--background-color-light-white);
 
     box-shadow: var(--shadow-accentued);
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.price-div-product:hover {
+    background-color: var(--background-color-purple);
 }
 
 .price-img {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
 
     flex-shrink: 0;
 
@@ -945,15 +961,47 @@ main>section {
     border-radius: 50%;
 
     background-color: var(--background-color-purple);
+
+    transition: background-color 0.3s ease;
 }
 
 .price-img img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
 
-    object-fit: cover;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    object-fit: contain;
 
     background-color: var(--background-color-purple);
+
+    transition: background-color 0.3s ease;
+}
+
+.heart-white {
+    opacity: 1;
+}
+
+.heart-purple {
+    opacity: 0;
+}
+
+.price-div-product:hover .price-img {
+    background-color: var(--background-color-light-white);
+}
+
+.price-div-product:hover .price-img img {
+    background-color: var(--background-color-light-white);
+}
+
+.price-div-product:hover .heart-purple {
+    opacity: 0;
+}
+
+.price-div-product:hover .heart-purple {
+    opacity: 1;
 }
 
 .price-div-product h3 {
@@ -998,6 +1046,12 @@ main>section {
 
     color: var(--txt-color-light-white);
     background-color: var(--background-color-purple);
+
+    transition: color 0.3s ease;
+}
+
+.price-div-product:hover button {
+    background-color: var(--background-color-dark-blue);
 }
 
 .price-div-product button:hover {
@@ -1060,6 +1114,26 @@ main>section {
 
 #price-check-list-img-null {
     background-color: var(--txt-color-muted-grey);
+}
+
+.price-div-product h3,
+.price-div-product h6,
+.price-price h2,
+.price-div-product p,
+.price-check-list h6 {
+    transition: color 0.3s ease;
+}
+
+.price-div-product:hover h3,
+.price-div-product:hover h6,
+.price-div-product:hover p,
+.price-div-product:hover .price-price h2,
+.price-div-product:hover .price-check-list h6 {
+    color: var(--txt-color-light-white);
+}
+
+.price-div-product:hover .price-price h6 {
+    color: var(--txt-color-disabled-blue);
 }
 
 /* testimonial */
